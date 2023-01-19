@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- ConstraintLayout to provide ability to design UI with
+    the drag and drop feature which is more
+    flexible and easy. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainThemeColor"
+        tools:context=".ui.instructions.InstructionsFragment">
+
+
+        <ImageView
+            android:id="@+id/instructions_imageview"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/instructions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/instructions_tv"
+            style="@style/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Instructions"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructions_imageview" />
+
+        <TextView
+            android:id="@+id/term1_tv"
+            style="@style/basic_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/term1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructions_tv" />
+
+        <TextView
+            android:id="@+id/term2_tv"
+            style="@style/basic_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/term2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/term1_tv" />
+
+        <ImageButton
+            android:id="@+id/InstructionNext_imageButton"
+            style="@style/next_button_style"
+            android:layout_marginBottom="64dp"
+            android:src="@drawable/next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/term2_tv"
+            app:layout_constraintStart_toStartOf="@+id/term2_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

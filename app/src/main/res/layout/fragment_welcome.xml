@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- ConstraintLayout to provide ability to design UI with
+    the drag and drop feature which is more
+    flexible and easy. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/mainThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.welcome.WelcomeFragment">
+
+
+        <ImageView
+            android:id="@+id/welcome_imageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeTitle_tv"
+            style="@style/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/welcome_title_txt"
+            android:textColor="#FFFEFE"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_imageView"
+            app:layout_constraintStart_toStartOf="@+id/welcome_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_imageView" />
+
+        <TextView
+            android:id="@+id/welcomeText_tv"
+            style="@style/basic_text_style"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/welcome_text_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTitle_tv" />
+
+        <ImageButton
+            android:id="@+id/welcomeNext_imageButton"
+            android:src="@drawable/next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/welcomeText_tv"
+            app:layout_constraintStart_toStartOf="@+id/welcomeText_tv"
+            style="@style/next_button_style" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

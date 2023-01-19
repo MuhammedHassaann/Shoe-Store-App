@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_title_txt">Welcome</string>
+    <string name="welcome_text_txt">We wish you all the best!\nWe hope you find what\nyou are looking for ❤\nProceed for more 🎯
+    </string>
+    <string name="term1">1️⃣ In the next screen you will\nfind the list of shoes in your\nstore🏪</string>
+    <string name="term2">2️⃣ You can add new shoes\nto the store using the add button ➕</string>
+</resources>
